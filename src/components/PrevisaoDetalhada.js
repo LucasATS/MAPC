@@ -2,8 +2,8 @@ import './PrevisaoResumida.css';
 import GetClima from '../util/GetClima.js';
 import ObjToArray from '../util/ObjToArray';
 
-function PrevisaoResumida() {
-  const clima = GetClima('3467747');
+function PrevisaoResumida(props) {
+  const clima = GetClima(props.nome);
   let tempo = ObjToArray(clima);
 
   return (
