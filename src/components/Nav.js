@@ -6,9 +6,10 @@ function Nav() {
 
   return (
     <div>
-      <nav className='nav-Painel glass row'>
+      <nav className='nav-Painel neumorphism row'>
         <Link className='nav-a' to="/">🏠 Home</Link>
-        <Link className='nav-a' to="/TESTE">🔍 Pesquisar</Link>
+        <input className='nav-pesquisar' placeholder='Pesquise por cidade...' type='text' ></input>
+        <Link className='nav-a' to="/TESTE">🔍</Link>
       </nav>
       <Outlet />
 

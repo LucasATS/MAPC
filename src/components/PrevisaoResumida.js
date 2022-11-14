@@ -7,7 +7,7 @@ function PrevisaoResumida(props) {
   // let tempo = ObjToArray(clima);
 
   return (
-  <span>
+  <span className='Painel-PrevisaoResumida painel-center neumorphism'>
     <h1> 28°</h1>
     <span>
       <h2> <b> Campo Grande </b> </h2>

@@ -2,28 +2,37 @@
     padding: 5px;
 
     position: fixed;
-    left: 10px;
-    top: 10px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 40px;
 
     text-align: center;
     z-index: 1;
 }
 
+.nav-a,
 .nav-a:link,
-.nav-a:visited {
+.nav-a:visited,
+.nav-pesquisar {
     background-color: #ffffff00;
     font-size: 16px;
-    color: #333333;
-    font-weight: 700;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 12px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 16px;
+    border-width: 0px;
+    border-radius: 360px;
 }
 
 .nav-a:hover,
-.nav-a:active {
-    background-color: #ffffff65;
+.nav-a:active,
+.nav-pesquisar:hover,
+.nav-pesquisar:active,
+.nav-pesquisar:focus {
+    background-color: #c9c9c98f;
+    outline: none;
+}
+
+.nav-pesquisar {
+    text-align: left !important;
 }
