@@ -11,6 +11,13 @@
 
 [🔗 ACESSE O PROJETO ](https://lucasats.github.io/LINK/)
 
+## __📂 PLAY__
+> npm start
+
+> npm run deploy
+
+> Instale: npm install axios e npm i -D react-router-dom
+> 
 ## __🎯 METAS__
 - [ ] SEO.
 - [ ] Autocompletar no campo de pesquisa.
