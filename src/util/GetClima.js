@@ -2,15 +2,16 @@ import { useState } from "react";
 import axios from 'axios';
 
 const GetClima = nome => {
-    const keyID = '3c11fa9814f69cad929d6d1f7136afbc';
+    // const keyID = '3c11fa9814f69cad929d6d1f7136afbc';
+    const keyID = 'b1b15e88fa797225412429c1c50c122a1'; // DEMO
     const keyID2 = '{API_KEY}';
 
     const [dados, setDados] = useState([]);
-    
+
     axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${nome}&appid=${keyID2}&units=metric`)
-    .then(res => {
-        setDados(res.data);
-    });
+        .then(res => {
+            setDados(res.data);
+        });
 
     return dados;
 }
