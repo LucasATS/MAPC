@@ -21,7 +21,7 @@
 ## __🎯 METAS__
 - [ ] SEO.
 - [ ] Autocompletar no campo de pesquisa.
-  - [ ] Integração com a API: ![IBGE](https://servicodados.ibge.gov.br/api/docs/localidades)
+  - [ ] Integração com a API: [IBGE](https://servicodados.ibge.gov.br/api/docs/localidades)
 - [ ] Montar interface.
     - [ ] Página 1: Aleatório das capitais brasileiras.
     - [ ] Página 2: Pesquisar por cidade.
