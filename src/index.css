@@ -11,6 +11,13 @@ h1, h2, h3, h4, h5, h6, a, input[type=text]{
     color: #333333;
 }
 
+.transition{
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
 .neumorphism {
     border-radius: 32px;
     background: #f3f3f3;

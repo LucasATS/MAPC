@@ -1,13 +1,21 @@
-.nav-Painel {
+.nav-Painel-nav, .nav-Painel-titulo {
     padding: 5px;
 
     position: fixed;
+    
+    text-align: center;
+    z-index: 1;
+
+}
+.nav-Painel-nav {
     transform: translate(-50%, -50%);
     left: 50%;
     top: 40px;
+}
 
-    text-align: center;
-    z-index: 1;
+.nav-Painel-titulo {
+    left: 10px;
+    bottom: 0%;
 }
 
 .nav-a,
@@ -29,7 +37,7 @@
 .nav-pesquisar:hover,
 .nav-pesquisar:active,
 .nav-pesquisar:focus {
-    background-color: #c9c9c98f;
+    background-color: #c9c9c95c;
     outline: none;
 }
 

@@ -1,13 +1,22 @@
 import PrevisaoResumida from '../components/PrevisaoResumida';
 import PrevisaoDetalhada from '../components/PrevisaoDetalhada';
 import './Home.css';
-import { WeatherEmojis } from '../util/Listas';
+import { Capitais } from '../util/Listas';
+import { useEffect, useState } from 'react';
+import Aleatorio from '../util/Aleatorio';
 
 function Home() {
 
+  const [capital, setCapital] = useState('Campo Grande, bra');
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCapital(Capitais[Aleatorio(0, 26, 1)][0]);
+    }, 3000);
+    return () => clearInterval(interval);
+  });
+
   return (<span>
-    <PrevisaoResumida nome='Campo Grande, bra' />
-    {/* <PrevisaoDetalhada nome='Sao paulo, bra' /> */}
+    <PrevisaoResumida nome={capital} />
   </span>);
 }
 

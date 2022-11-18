@@ -1,0 +1,89 @@
+/* 
+    PrevisaoResumida = pr
+*/
+
+a {
+    text-decoration: none;
+}
+
+.Painel-PrevisaoResumida {
+    min-width: 200px;
+    min-height: 135px;
+}
+
+.Painel-PrevisaoResumida h1,
+.Painel-PrevisaoDetalhada h1 {
+    margin: 30px 0px 30px 0px;
+    line-height: 0px;
+    font-size: 80px;
+}
+
+.Painel-PrevisaoResumida h2,
+.Painel-PrevisaoDetalhada h2,
+h3 {
+    margin: 15px 0px 15px 0px;
+    line-height: 0px;
+}
+
+.Painel-PrevisaoDetalhada h3,
+.Painel-PrevisaoResumida h3 {
+    margin-top: 25px;
+}
+
+.previsao-emoji {
+    font-size: 36px !important;
+    margin-bottom: 25px !important;
+    margin-top: -5px !important;
+}
+
+.Painel-PrevisaoDetalhada {
+    min-width: 200px;
+    min-height: 135px;
+    border-radius: 32px;
+    background: #f3f3f3;
+    box-shadow: 27px 27px 25px #36363675;
+}
+
+.pd-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 60px 60px; 
+    grid-template-areas: 
+      ". . ."
+      ". . ."; 
+
+    padding: 5px;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    left: 50%;
+    top: 50%;
+
+    text-align: center;
+    z-index: 0;
+}
+
+@media only screen and (orientation: portrait) {
+    .pd-container {
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 25px 25px; 
+        grid-template-areas: 
+          ". ."
+          ". ."
+          ". ."; 
+        
+        top: 55%;
+
+        border-radius: 32px;
+        background: #ffffff75;
+    }
+
+    .Painel-PrevisaoDetalhada {
+        border-radius: none;
+        background: #00000000;
+        box-shadow: none;
+    }
+}

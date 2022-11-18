@@ -1,22 +1,22 @@
-const pesquisa = a => {
+const getEmoji = a => {
     for (let i = 0; i < WeatherEmojis.length; i++)
-      WeatherEmojis[i][1] === a && console.log(WeatherEmojis[i][0])
-  };
+        if (WeatherEmojis[i][1] === a) return WeatherEmojis[i][0]
+};
 
 const WeatherEmojis = [
-    ["☁️","Clouds"],
-    ["⛈️","Rain"],
-    ["🌨️","Snow"],
-    ["🌧️","Drizzle"],
-    ["⛈️","Thunderstorm"],
-    ["☀️","clear sky"],
+    ["☁️", "Clouds"],
+    ["⛈️", "Rain"],
+    ["🌨️", "Snow"],
+    ["🌧️", "Drizzle"],
+    ["⛈️", "Thunderstorm"],
+    ["☀️", "Clear"],
 ]
 
 const Capitais = [
     ["Porto Velho", "Rondônia"],
     ["Manaus", "Amazonas"],
     ["Rio Branco", "Acre"],
-    ["Campo Grande", "Mato Grosso do Sul"],
+    ["Campo Grande, MS", "Mato Grosso do Sul"],
     ["Macapá", "Amapá"],
     ["Brasília", "Distrito Federal"],
     ["Boa Vista", "Roraima"],
@@ -42,4 +42,4 @@ const Capitais = [
     ["Vitória", "Espírito Santo"]
 ];
 
-export {WeatherEmojis, Capitais}; 
+export { WeatherEmojis, Capitais, getEmoji }; 
