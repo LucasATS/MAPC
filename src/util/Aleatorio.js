@@ -1,9 +1,9 @@
-function Aleatorio(de, ate, quant) {
-  /*
-    de = min
-    ate = max
-    quant = valores para sortear
-  */
+/*
+  de = min
+  ate = max
+  quant = valores para sortear
+*/
+const Aleatorio = (de, ate, quant) => {
 
   de = parseInt(de);
   ate = parseInt(ate) + 1;
@@ -16,13 +16,13 @@ function Aleatorio(de, ate, quant) {
     results.push(valor);
   }
 
-  console.log(
-    'SISTEMA DE ALEATÓRIO \n' +
-    'de: ' + de + '\n' +
-    'ate: ' + ate + '\n' +
-    'quant: ' + quant + '\n' +
-    'results: ' + results
-  );
+  // console.log(
+  //   'SISTEMA DE ALEATÓRIO \n' +
+  //   'de: ' + de + '\n' +
+  //   'ate: ' + ate + '\n' +
+  //   'quant: ' + quant + '\n' +
+  //   'results: ' + results
+  // );
 
   return results;
 }

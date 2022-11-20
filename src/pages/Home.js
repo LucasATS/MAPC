@@ -10,7 +10,7 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCapital(Capitais[Aleatorio(0, 26, 1)][0]);
-    }, 3000);
+    }, 4500);
     return () => clearInterval(interval);
   });
 

@@ -15,7 +15,7 @@ function PrevisaoResumida(props) {
     <span>
       <Backgorund tempo={tempo} />
 
-      <Link to={`/${nome}`}
+      <Link to={`/${ props.nome.replace(", bra", "") }/r`}
         className='Painel-PrevisaoResumida painel-center neumorphism center col transition'>
         <h2 className='previsao-emoji'> {getWeather(tempo, WeatherEmojis)} </h2>
         <h1> {Math.round(clima?.main?.temp)}°</h1>

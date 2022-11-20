@@ -44,14 +44,19 @@ h3 {
     box-shadow: 27px 27px 25px #36363675;
 }
 
+.Painel-PrevisaoDetalhada:hover,
+.Painel-PrevisaoResumida:hover {
+    background: #ffffff;
+}
+
 .pd-container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 5vw 5vw; 
-    grid-template-areas: 
-      ". . ."
-      ". . ."; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5vw 5vw;
+    grid-template-areas:
+        ". . ."
+        ". . .";
 
     padding: 5px;
 
@@ -68,14 +73,14 @@ h3 {
 /* CSS PARA CELULAR :D */
 @media only screen and (orientation: portrait) {
     .pd-container {
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
-        gap: 30px 25px; 
-        grid-template-areas: 
-          ". ."
-          ". ."
-          ". ."; 
-        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 30px 25px;
+        grid-template-areas:
+            ". ."
+            ". ."
+            ". .";
+
         top: 55%;
 
         border-radius: 32px;
