@@ -1,4 +1,4 @@
-# MAPC: MEIO AUTÔMATICO DE PREVER O CLIMA
+# ☁️ MAPC: MEIO AUTÔMATICO DE PREVER O CLIMA
 
 ## Modelo simples e divertido de site, que mostra os climas, utilizando a API openweathermap. Alguns gifs e imagens foram extraidos da WEB.
 

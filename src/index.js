@@ -1,5 +1,5 @@
 import PrevisaoPesquisadaDetalhada from './pages/PrevisaoPesquisadaDetalhada';
-import { HashRouter, BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import Nav from './components/Nav';
 import Home from './pages/Home.js';
