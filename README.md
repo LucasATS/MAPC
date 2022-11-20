@@ -1,15 +1,15 @@
 # MAPC: MEIO AUTÔMATICO DE PREVER O CLIMA
 
-### Modelo simples e divertido de site, que mostra os climas, utilizando a API openweathermap..
+## Modelo simples e divertido de site, que mostra os climas, utilizando a API openweathermap. Alguns gifs e imagens foram extraidos da WEB.
 
 ### Ajude-nos, a melhorar o site 🤩❤️
 
     FEITO POR https://github.com/LucasATS
     USANDO A API DO https://openweathermap.org/.
 
-[![preview](./.github/preview.png)](https://lucasats.github.io/LINK/)
+[![preview](./.github/preview.png)](https://mapc.vercel.app/)
 
-[🔗 ACESSE O PROJETO ](https://lucasats.github.io/LINK/)
+[🔗 ACESSE O PROJETO ](https://mapc.vercel.app/)
 
 ## __📂 PLAY__
 > npm start
@@ -19,6 +19,9 @@
 > Instale: npm install axios e npm i -D react-router-dom
 > 
 ## __🎯 METAS__
+- [ ] Add barra de carregamento no card 'PrevisãoResumida'.
+- [ ] Criar Página de erro para cidade não carregada corretamente.
+- [ ] Criar Página de erro para cidade não encontrada.
 - [ ] SEO dinamico para cada página.
 - [ ] SEO geral.
 - [ ] Autocompletar no campo de pesquisa.
