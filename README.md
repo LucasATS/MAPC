@@ -12,6 +12,7 @@
 [🔗 ACESSE O PROJETO ](https://mapc.vercel.app/)
 
 ## __📂 PLAY__
+
 > npm start
 
 > npm run deploy
@@ -19,16 +20,17 @@
 > Instale: npm install axios e npm i -D react-router-dom
 > 
 ## __🎯 METAS__
+
 - [ ] Add barra de carregamento no card 'PrevisãoResumida'.
 - [ ] Criar Página de erro para cidade não carregada corretamente.
 - [ ] Criar Página de erro para cidade não encontrada.
 - [ ] SEO dinamico para cada página.
-- [ ] SEO geral.
+- [X] SEO geral.
 - [ ] Autocompletar no campo de pesquisa.
   - [ ] Integração com a API: [IBGE](https://servicodados.ibge.gov.br/api/docs/localidades)
 - [X] Montar interface.
-    - [X] Página 1: Aleatório das capitais brasileiras.
-    - [X] Página 2: Pesquisar por cidade.
+  - [X] Página 1: Aleatório das capitais brasileiras.
+  - [X] Página 2: Pesquisar por cidade.
 - [x] Conexão com a API openweathermap.
 
 <!--
