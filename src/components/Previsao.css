@@ -86,13 +86,13 @@ h3 {
         border-radius: 32px;
         z-index: 2;
 
-        background: #ffffff3b;
-        backdrop-filter: blur(6px);
+        background: #ffffff40;
+        backdrop-filter: blur(3px);
     }
 
-    .pd-container:hover {
+    /* .pd-container:hover {
         background: #f3f3f3;
-    }
+    } */
 
     .Painel-PrevisaoDetalhada {
         border-radius: none;

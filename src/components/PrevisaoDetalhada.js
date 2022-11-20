@@ -4,7 +4,7 @@ import Backgorund from './Background.js';
 import './Previsao.css';
 
 const PrevisaoDetalhada = props => {
-  const clima = GetClima(props.nome + ', bra', props.validacao);
+  const clima = GetClima(props.nome + ', bra');
   const tempo = TratamentoDeErro(clima);
 
   return (

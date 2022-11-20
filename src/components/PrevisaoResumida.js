@@ -6,16 +6,14 @@ import './Previsao.css';
 
 function PrevisaoResumida(props) {
 
-  const nome = props.nome;
-
-  const clima = GetClima(nome + ', bra');
+  const clima = GetClima(props.nome + ', bra');
   const tempo = TratamentoDeErro(clima);
 
   return (
     <span>
       <Backgorund tempo={tempo} />
 
-      <Link to={`/${ props.nome.replace(", bra", "") }/r`}
+      <Link to={`/${props.nome.replace(', bra', '')}`}
         className='Painel-PrevisaoResumida painel-center neumorphism center col transition'>
         <h2 className='previsao-emoji'> {getWeather(tempo, WeatherEmojis)} </h2>
         <h1> {Math.round(clima?.main?.temp)}°</h1>
