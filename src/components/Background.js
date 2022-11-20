@@ -4,7 +4,7 @@ import './Background.css';
 
 const Backgorund = (props) => {
     let style = {
-        background: `#fff url('./img/${props.tempo}/${Aleatorio(1, getWeather(props.tempo, WeatherGifs), 1)}.gif') center bottom/auto repeat padding-box`,
+        background: `#fff url('./img/${props.tempo}/${Aleatorio(1, getWeather(props.tempo, WeatherGifs), 1)}.gif') center center/contain repeat`,
     }
 
     return (<span className='Background' style={style} />);

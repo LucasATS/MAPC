@@ -78,4 +78,10 @@
     .nav-Painel-titulo:hover {
         opacity: 1;
     }
+
+    .nav-a,
+    .nav-pesquisar, 
+    .nav-Painel-titulo {
+        font-size: 3vw !important;
+    }
 }
