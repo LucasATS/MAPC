@@ -1,5 +1,6 @@
 import { GetClima, TratamentoDeErro } from '../util/GetClima.js';
-import { getWeather } from '../util/Listas';
+import { getWeather, WeatherEmojis } from '../util/Listas';
+import Backgorund from './Background.js';
 import './Previsao.css';
 
 const PrevisaoDetalhada = props => {
@@ -7,7 +8,10 @@ const PrevisaoDetalhada = props => {
   const tempo = TratamentoDeErro(clima);
 
   return (
-    <span className='pd-container transition'>
+    <span>
+      <Backgorund tempo={tempo} />
+      <span className='pd-container transition'>
+
         <span className='Painel-PrevisaoDetalhada pd-neumorphism center col'>
           <h3 className='previsao-emoji'> 🥵 </h3>
           <h3> Sensação Térmica </h3>
@@ -15,7 +19,7 @@ const PrevisaoDetalhada = props => {
         </span>
 
         <span className='Painel-PrevisaoDetalhada pd-neumorphism center col'>
-          <h3 className='previsao-emoji'> {getWeather(tempo)} </h3>
+          <h3 className='previsao-emoji'> {getWeather(tempo, WeatherEmojis)} </h3>
           <h1> {Math.round(clima?.main?.temp)}°</h1>
           <span>
             <h2> <b> {clima?.name} </b> </h2>
@@ -46,6 +50,7 @@ const PrevisaoDetalhada = props => {
           <h3> {clima?.wind?.speed}km/h </h3>
           <h3> {clima?.wind?.deg}° </h3>
         </span>
+      </span>
     </span>);
 }
 
