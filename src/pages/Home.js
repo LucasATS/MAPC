@@ -1,9 +1,8 @@
 import PrevisaoResumida from '../components/PrevisaoResumida';
-import PrevisaoDetalhada from '../components/PrevisaoDetalhada';
-import './Home.css';
 import { Capitais } from '../util/Listas';
 import { useEffect, useState } from 'react';
 import Aleatorio from '../util/Aleatorio';
+import './Home.css';
 
 function Home() {
 

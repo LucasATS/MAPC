@@ -1,21 +1,28 @@
-.nav-Painel-nav, .nav-Painel-titulo {
+.nav-Painel-nav,
+.nav-Painel-titulo {
     padding: 5px;
 
     position: fixed;
-    
+
     text-align: center;
     z-index: 1;
 
+    /* neumorphism */
+    border-radius: 32px;
+    background: #f3f3f3;
+    box-shadow: 27px 27px 25px #36363675;
 }
+
 .nav-Painel-nav {
     transform: translate(-50%, -50%);
+    width: 475px;
     left: 50%;
     top: 40px;
 }
 
 .nav-Painel-titulo {
     left: 10px;
-    bottom: 0%;
+    bottom: -10px;
 }
 
 .nav-a,
@@ -43,4 +50,30 @@
 
 .nav-pesquisar {
     text-align: left !important;
+}
+
+/* CSS PARA CELULAR :D */
+@media only screen and (orientation: portrait) {
+
+    .nav-Painel-nav {
+        transform: translate(0%, -50%);
+        top: 25px;
+        width: auto;
+        left: 0%;
+        right: 0%;
+
+        /* neumorphism */
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .nav-Painel-titulo {
+        left: 0px;
+        bottom: -20px;
+        opacity: .50;
+        border-radius: 0px 15px 0px 0px;
+    }
+
+    .nav-Painel-titulo:hover {
+        opacity: 1;
+    }
 }

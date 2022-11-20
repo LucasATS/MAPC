@@ -8,15 +8,14 @@ function Nav() {
 
   return (
     <div>
-      <nav className='nav-Painel-nav neumorphism row transition'>
+      <nav className='nav-Painel-nav center row transition'>
         <Link className='nav-a' to="/">🏠 Home</Link>
         <input onChange={(evnt) => { setBarraPesquisa(evnt.target.value) }} className='nav-pesquisar' placeholder='Pesquise uma cidade...' type='text' ></input>
         <Link className='nav-a' to={`/${barraPesquisa}`}>🔍 Pesqusar</Link>
       </nav>
-
       <Outlet />
 
-      <h4 className='nav-Painel-titulo neumorphism'><span style={{ color: '#e89b00' }}>MAPC</span>: MEIO AUTÔMATICO DE PREVER O CLIMA</h4>
+      <h4 className='nav-Painel-titulo transition'><span style={{ color: '#e89b00' }}>MAPC</span>: MEIO AUTÔMATICO DE PREVER O CLIMA</h4>
     </div >
 
   );

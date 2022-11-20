@@ -1,8 +1,6 @@
 body {
-    background: #fff url('./img/a/1.gif') center bottom/auto repeat padding-box;
     padding: 0;
     margin: 0;
-
 }
 
 h1, h2, h3, h4, h5, h6, a, input[type=text]{
@@ -38,6 +36,7 @@ h1, h2, h3, h4, h5, h6, a, input[type=text]{
 }
 
 .center{
+    justify-content: center;
     text-align: center;
     align-items: center;
     align-self: center;

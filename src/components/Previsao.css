@@ -33,7 +33,7 @@ h3 {
 .previsao-emoji {
     font-size: 36px !important;
     margin-bottom: 25px !important;
-    margin-top: -5px !important;
+    margin-top: -15px !important;
 }
 
 .Painel-PrevisaoDetalhada {
@@ -48,7 +48,7 @@ h3 {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
-    gap: 60px 60px; 
+    gap: 5vw 5vw; 
     grid-template-areas: 
       ". . ."
       ". . ."; 
@@ -65,11 +65,12 @@ h3 {
     z-index: 0;
 }
 
+/* CSS PARA CELULAR :D */
 @media only screen and (orientation: portrait) {
     .pd-container {
         grid-template-columns: 1fr 1fr; 
         grid-template-rows: 1fr 1fr 1fr; 
-        gap: 25px 25px; 
+        gap: 30px 25px; 
         grid-template-areas: 
           ". ."
           ". ."
@@ -78,7 +79,14 @@ h3 {
         top: 55%;
 
         border-radius: 32px;
-        background: #ffffff75;
+        z-index: 2;
+
+        background: #ffffff3b;
+        backdrop-filter: blur(6px);
+    }
+
+    .pd-container:hover {
+        background: #f3f3f3;
     }
 
     .Painel-PrevisaoDetalhada {

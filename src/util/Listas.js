@@ -1,4 +1,4 @@
-const getEmoji = a => {
+const getWeather = a => {
     for (let i = 0; i < WeatherEmojis.length; i++)
         if (WeatherEmojis[i][1] === a) return WeatherEmojis[i][0]
 };
@@ -10,6 +10,16 @@ const WeatherEmojis = [
     ["🌧️", "Drizzle"],
     ["⛈️", "Thunderstorm"],
     ["☀️", "Clear"],
+]
+
+// Define quantos gifs contem a pasta img
+const WeatherGifs = [
+    [3, "Clear"],
+    [4, "Clouds"],
+    [2, "Drizzle"],
+    [4, "Rain"],
+    [4, "Snow"],
+    [3, "Thunderstorm"],
 ]
 
 const Capitais = [
@@ -42,4 +52,4 @@ const Capitais = [
     ["Vitória", "Espírito Santo"]
 ];
 
-export { WeatherEmojis, Capitais, getEmoji }; 
+export { WeatherEmojis, Capitais, WeatherGifs, getWeather }; 
