@@ -1,6 +1,6 @@
-# MAPC: Meio Autômato de Prever o Clima
+# MAPC: MEIO AUTÔMATICO DE PREVER O CLIMA
 
-### Um modelo de site feito em REACT usando a API do openweathermap.
+### Modelo simples e divertido de site, que mostra os climas, utilizando a API openweathermap..
 
 ### Ajude-nos, a melhorar o site 🤩❤️
 
@@ -19,12 +19,13 @@
 > Instale: npm install axios e npm i -D react-router-dom
 > 
 ## __🎯 METAS__
-- [ ] SEO.
+- [ ] SEO dinamico para cada página.
+- [ ] SEO geral.
 - [ ] Autocompletar no campo de pesquisa.
   - [ ] Integração com a API: [IBGE](https://servicodados.ibge.gov.br/api/docs/localidades)
-- [ ] Montar interface.
-    - [ ] Página 1: Aleatório das capitais brasileiras.
-    - [ ] Página 2: Pesquisar por cidade.
+- [X] Montar interface.
+    - [X] Página 1: Aleatório das capitais brasileiras.
+    - [X] Página 2: Pesquisar por cidade.
 - [x] Conexão com a API openweathermap.
 
 <!--
