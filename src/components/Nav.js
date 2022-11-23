@@ -12,7 +12,7 @@ function Nav() {
         <Link className='nav-a transition' to="/">🏠 Home</Link>
         <input className='nav-pesquisar transition' onChange={(evnt) => { setBarraPesquisa(evnt.target.value) }}
           placeholder='Pesquise uma cidade...' type='text' ></input>
-        <Link className='nav-a transition' to={`/${barraPesquisa}`}>🔍 Pesqusar</Link>
+        <Link className='nav-a transition' to={`/${barraPesquisa}`}>🔍 Pesquisar</Link>
 
       </nav>
 
